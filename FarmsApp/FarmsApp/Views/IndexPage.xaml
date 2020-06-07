@@ -14,7 +14,7 @@
                HorizontalOptions="CenterAndExpand"></Image>
                 <Grid Margin="20,35,20,20">
 
-                    <Label Text="Podras ingresar lo que necesites en los siguientes modulos: HOLA ESTA ES UNA PRUEBA."  />
+                    <Label Text="Podras ingresar lo que necesites en los siguientes modulos: HOLA ESTA ES UNA PRUEBA Number Two."  />
                 </Grid>
 
                 <StackLayout VerticalOptions="FillAndExpand">
