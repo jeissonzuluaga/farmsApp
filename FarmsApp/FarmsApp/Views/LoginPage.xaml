@@ -62,6 +62,7 @@
                         HeightRequest="46"
                         HorizontalOptions="Center"
                         Text="Ingresar"
+                        TextColor="Chocolate"
                         WidthRequest="220">
                         </Button>
 
@@ -72,11 +73,12 @@
                         HeightRequest="46"
                         HorizontalOptions="Center"
                         Text="Registrar"
+                        TextColor="Chocolate"
                         WidthRequest="220">
                         </Button>
                     </StackLayout>
 
-                    // Asignar un hipervínculo a un label
+                    <!--Asignar un hipervínculo a un label-->
                     <Label
                         FontSize="Medium"
                         HorizontalOptions="Center">
