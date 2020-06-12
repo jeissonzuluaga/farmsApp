@@ -12,7 +12,8 @@
             <StackLayout>
 
                 <Image
-                    HorizontalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    Scale="1.2"
                     Source="logofarms2"
                     VerticalOptions="CenterAndExpand">
                 </Image>
