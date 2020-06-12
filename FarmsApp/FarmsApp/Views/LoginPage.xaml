@@ -76,6 +76,7 @@
                         </Button>
                     </StackLayout>
 
+                    // Asignar un hipervínculo a un label
                     <Label
                         FontSize="Medium"
                         HorizontalOptions="Center">
