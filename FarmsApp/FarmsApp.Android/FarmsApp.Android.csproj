@@ -85,7 +85,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\logofarms.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FarmsApp\FarmsApp.csproj">
       <Project>{A76D0BA3-F2F4-4FA7-8D73-4EAC6572CF4F}</Project>
