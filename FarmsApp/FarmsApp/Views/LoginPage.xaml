@@ -75,11 +75,20 @@
                         WidthRequest="220">
                         </Button>
                     </StackLayout>
-                
+
                     <Label
                         FontSize="Medium"
-                        HorizontalOptions="Center"
-                        Text="¿Olvidaste tu contraseña?">
+                        HorizontalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="¿Olvidaste tu contraseña?">
+                                    <Span.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding TapForgot}"
+                                          CommandParameter="https://docs.microsoft.com/xamarin/" />
+                                    </Span.GestureRecognizers>
+                                </Span>
+                            </FormattedString>
+                        </Label.FormattedText>
                     </Label>
                 </StackLayout>
         
