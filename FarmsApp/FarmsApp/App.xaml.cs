@@ -12,7 +12,7 @@ namespace FarmsApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new IndexPage());
+            MainPage = new NavigationPage(new BornPage());
         }
 
         protected override void OnStart()
