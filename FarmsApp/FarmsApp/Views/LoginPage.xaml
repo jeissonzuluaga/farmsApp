@@ -80,7 +80,7 @@
                     <Label
                         FontSize="Medium"
                         HorizontalOptions="Center"
-                        Text="¿Olvidaste tu contraseña pendejo mamahuevo?">
+                        Text="¿Olvidaste tu contraseña pendejo?">
                     </Label>
                 </StackLayout>
         
