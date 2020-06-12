@@ -50,7 +50,8 @@
                         HorizontalTextAlignment="Center"
                         IsPassword="True"
                         Placeholder="Ingrese su contraseña"
-                        WidthRequest="250">
+                        WidthRequest="250"
+                        BackgroundColor="DarkBlue">
                     </Entry>
 
                     <StackLayout
