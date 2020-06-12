@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace FarmsApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class IndexPage : ContentPage
+    public partial class HomePage : ContentPage
     {
-        public IndexPage()
+        public HomePage()
         {
             InitializeComponent();
         }

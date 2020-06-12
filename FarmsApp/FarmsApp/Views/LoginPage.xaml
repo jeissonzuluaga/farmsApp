@@ -7,23 +7,80 @@
              x:Class="FarmsApp.Views.LoginPage"
              Title="Login">
     <ContentPage.Content>
-        <ScrollView>
+        <ScrollView
+            BackgroundColor="#FF8F2D">
             <StackLayout>
-        
-                <Image Source="logofarms" HorizontalOptions="CenterAndExpand"/>
-        
-                <StackLayout Padding="10">
-                    <Label Text="Usuario " FontSize="Large"/>
-                    <Entry Placeholder="Ingrese su usuario"/>
-                    <Label Text="Contraseña" FontSize="Large"/>
-                    <Entry Placeholder="Ingrese su contraseña"/>
+
+                <Image
+                    HorizontalOptions="CenterAndExpand"
+                    Source="logofarms2"
+                    VerticalOptions="CenterAndExpand">
+                </Image>
+
+                <StackLayout
+                    Padding="10"
+                    VerticalOptions="CenterAndExpand">
+                    <Label
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        Text="Usuario"
+                        TextColor="White">
+                    </Label>
+
+                    <Entry
+                        HeightRequest="40"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        Placeholder="Ingrese su usuario"
+                        WidthRequest="250">
+                    </Entry>
+
+                    <Label
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        HorizontalOptions="Center"
+                        Text="Contraseña">
+                    </Label>
                     
-                    <StackLayout Orientation="Horizontal">
-                        <Button Text="Ingresar" HorizontalOptions="FillAndExpand"/>
-                        <Button Text="Registrar" HorizontalOptions="FillAndExpand"/>
+                    <Entry
+                        HeightRequest="40"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        IsPassword="True"
+                        Placeholder="Ingrese su contraseña"
+                        WidthRequest="250">
+                    </Entry>
+
+                    <StackLayout
+                        Padding="15">
+                        <Button
+                        BackgroundColor="White"
+                        CornerRadius="23"
+                        FontSize="Medium"
+                        HeightRequest="46"
+                        HorizontalOptions="Center"
+                        Text="Ingresar"
+                        WidthRequest="220">
+                        </Button>
+
+                        <Button
+                        BackgroundColor="White"
+                        CornerRadius="23"
+                        FontSize="Medium"
+                        HeightRequest="46"
+                        HorizontalOptions="Center"
+                        Text="Registrar"
+                        WidthRequest="220">
+                        </Button>
                     </StackLayout>
                 
-                    <Label Text="¿Olvidaste tu contraseña?" HorizontalOptions="Center"></Label>
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Center"
+                        Text="¿Olvidaste tu contraseña?">
+                    </Label>
                 </StackLayout>
         
             </StackLayout>
