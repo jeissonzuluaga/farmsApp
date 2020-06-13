@@ -6,23 +6,30 @@
              mc:Ignorable="d"
              x:Class="FarmsApp.Views.HomePage">
     <ContentPage.Content>
-        <ScrollView>
+        <ScrollView
+            BindingContext="{Binding Wearing}">
             <StackLayout>
                 <!-- Place new controls here -->
 
-                <Image Source="logo"
-               HorizontalOptions="CenterAndExpand"></Image>
-                <Grid Margin="20,35,20,20">
+                <Image 
+                    Source="logo"
+                    HorizontalOptions="CenterAndExpand">
+                </Image>
+                
+                <Grid 
+                    Margin="20,35,20,20">
 
-                    <Label Text="Podras ingresar lo que necesites en los siguientes modulos: HOLA ESTA ES UNA PRUEBA Number Three -_-."  />
+                    <Label 
+                        Text="Podras ingresar lo que necesites en los siguientes modulos:"  />
                 </Grid>
 
-                <StackLayout VerticalOptions="FillAndExpand">
-
+                <StackLayout 
+                    VerticalOptions="FillAndExpand">
                 </StackLayout>
 
 
-                <Grid Padding="2">
+                <Grid 
+                    Padding="2">
                     <Grid.RowDefinitions>
                         <RowDefinition />
                         <RowDefinition />
@@ -33,69 +40,75 @@
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
 
-                    <Button Text="Inventario" 
-                    Grid.Column="0"    
-                    CornerRadius="5"
-                    BackgroundColor="OrangeRed"
-                    BorderColor="AntiqueWhite"
-                    ContentLayout="Top,0"
-                    Image="inventario"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="Fill"/>
+                    <Button 
+                        Text="Inventario" 
+                        Grid.Column="0"    
+                        CornerRadius="5"
+                        BackgroundColor="OrangeRed"
+                        BorderColor="AntiqueWhite"
+                        ContentLayout="Top,0"
+                        Image="inventario"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="Fill"/>
 
-                    <Button Text="Nacimientos" 
-                    Grid.Column="1"
-                    CornerRadius="5"
-                    BackgroundColor="Orange"
-                    BorderColor="AntiqueWhite"
-                    ContentLayout="Top,0"
-                    Image="ternero"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="Fill"/>
+                    <Button 
+                        Text="Nacimientos" 
+                        Grid.Column="1"
+                        CornerRadius="5"
+                        BackgroundColor="Orange"
+                        BorderColor="AntiqueWhite"
+                        ContentLayout="Top,0"
+                        Image="ternero"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="Fill"/>
 
-                    <Button Text="Destete" 
-                    Grid.Row="1"
-                    CornerRadius="5"
-                    BackgroundColor="DeepSkyBlue"
-                    BorderColor="AntiqueWhite"
-                    ContentLayout="Top,0"
-                    Image="invent1"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="Fill"/>
+                    <Button 
+                        Text="Destete" 
+                        Grid.Row="1"
+                        CornerRadius="5"
+                        BackgroundColor="DeepSkyBlue"
+                        BorderColor="AntiqueWhite"
+                        ContentLayout="Top,0"
+                        Image="invent1"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="Fill"/>
 
-                    <Button Text="Muertes" 
-                    Grid.Row="1"
-                    Grid.Column="1"
-                    CornerRadius="5"
-                    BackgroundColor="CadetBlue"
-                    BorderColor="AntiqueWhite"
-                    ContentLayout="Top,0"
-                    Image="invent1"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="Fill"/>
+                    <Button 
+                        Text="Muertes" 
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        CornerRadius="5"
+                        BackgroundColor="CadetBlue"
+                        BorderColor="AntiqueWhite"
+                        ContentLayout="Top,0"
+                        Image="invent1"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="Fill"/>
 
 
-                    <Button Text="Ventas / Sacrificio" 
-                    Grid.Row="2"
-                    CornerRadius="5"
-                    Opacity="50"
-                    BackgroundColor="LightGreen"
-                    BorderColor="AntiqueWhite"
-                    ContentLayout="Top,0"
-                    Image="ventas"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="Fill"/>
+                    <Button 
+                        Text="Ventas / Sacrificio" 
+                        Grid.Row="2"
+                        CornerRadius="5"
+                        Opacity="50"
+                        BackgroundColor="LightGreen"
+                        BorderColor="AntiqueWhite"
+                        ContentLayout="Top,0"
+                        Image="ventas"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="Fill"/>
 
-                    <Button Text="Compras" 
-                    Grid.Row="2"
-                    Grid.Column="1"
-                    CornerRadius="5"
-                    BackgroundColor="Green"
-                    BorderColor="AntiqueWhite"
-                    ContentLayout="Top,0"
-                    Image="compras"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="Fill"/>
+                    <Button 
+                        Text="Compras" 
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        CornerRadius="5"
+                        BackgroundColor="Green"
+                        BorderColor="AntiqueWhite"
+                        ContentLayout="Top,0"
+                        Image="compras"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="Fill"/>
                 </Grid>
 
             </StackLayout>
