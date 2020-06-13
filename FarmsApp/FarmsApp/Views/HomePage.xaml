@@ -7,7 +7,7 @@
              x:Class="FarmsApp.Views.HomePage">
     <ContentPage.Content>
         <ScrollView
-            BindingContext="{Binding Wearing}">
+            BindingContext="{Binding Home}">
             <StackLayout>
                 <!-- Place new controls here -->
 

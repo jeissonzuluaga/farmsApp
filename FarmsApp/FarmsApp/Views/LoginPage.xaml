@@ -4,11 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
              x:Class="FarmsApp.Views.LoginPage"
              Title="Login">
     <ContentPage.Content>
         <ScrollView
-            BackgroundColor="#FF8F2D">
+            BackgroundColor="#FF8F2D"
+            BindingContext="{Binding Login}"
+             >
             <StackLayout>
 
                 <Image
@@ -69,6 +72,7 @@
 
                         <Button
                         BackgroundColor="White"
+                        Command="{Binding HomeCommand}"
                         CornerRadius="23"
                         FontSize="Medium"
                         HeightRequest="46"
@@ -82,7 +86,8 @@
                     <!--Asignar un hipervínculo a un label-->
                     <Label
                         FontSize="Medium"
-                        HorizontalOptions="Center">
+                        HorizontalOptions="Center"
+                        TextColor="DarkOrange">
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="¿Olvidaste tu contraseña?">
