@@ -8,11 +8,11 @@
              x:Class="FarmsApp.Views.LoginPage"
              Title="Login">
     <ContentPage.Content>
-        <ScrollView
-            BackgroundColor="#FF8F2D"
-            BindingContext="{Binding Login}"
-             >
-            <StackLayout>
+
+        <ScrollView>
+            <StackLayout
+                BackgroundColor="#FFF">
+
 
                 <Image
                     HorizontalOptions="Center"
@@ -37,6 +37,7 @@
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
                         Placeholder="Ingrese su usuario"
+                        TextColor="#4C4947"
                         WidthRequest="250">
                     </Entry>
 
@@ -54,40 +55,31 @@
                         HorizontalTextAlignment="Center"
                         IsPassword="True"
                         Placeholder="Ingrese su contraseña"
+                        TextColor="#4C4947"
                         WidthRequest="250">
                     </Entry>
 
                     <StackLayout
                         Padding="15">
                         <Button
-                        BackgroundColor="White"
+                        BackgroundColor="#EB6F2D"
                         CornerRadius="23"
                         FontSize="Medium"
                         HeightRequest="46"
                         HorizontalOptions="Center"
                         Text="Ingresar"
-                        TextColor="Chocolate"
+                        TextColor="White"
                         WidthRequest="220">
                         </Button>
 
-                        <Button
-                        BackgroundColor="White"
-                        Command="{Binding HomeCommand}"
-                        CornerRadius="23"
-                        FontSize="Medium"
-                        HeightRequest="46"
-                        HorizontalOptions="Center"
-                        Text="Registrar"
-                        TextColor="Chocolate"
-                        WidthRequest="220">
-                        </Button>
+                       
                     </StackLayout>
 
                     <!--Asignar un hipervínculo a un label-->
                     <Label
                         FontSize="Medium"
                         HorizontalOptions="Center"
-                        TextColor="DarkOrange">
+
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="¿Olvidaste tu contraseña?">

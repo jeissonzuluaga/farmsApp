@@ -8,18 +8,18 @@
             BindingContext="{Binding Born}">
             <StackLayout 
                 Padding="10">
-                
+
                 <Label 
                    Text="Codigo"
                    FontSize="Large"/>
-                
+
                 <Entry
                     Placeholder="Ingrese codigo(##-##)"/>
-                
+
                 <Label 
                     Text="Categoria"
                     FontSize="Large"/>
-                
+
                 <Picker
                     HorizontalOptions="FillAndExpand">
                     <Picker.Items>
@@ -34,6 +34,6 @@
 
             </StackLayout>
         </ScrollView>
-        
+
     </ContentPage.Content>
 </ContentPage>
