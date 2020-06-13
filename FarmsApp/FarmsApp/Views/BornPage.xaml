@@ -1,24 +1,25 @@
-﻿ <?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FarmsApp.Views.BornPage"
              Title="Nacimientos">
     <ContentPage.Content>
-        <ScrollView>
+        <ScrollView
+            BindingContext="{Binding Born}">
             <StackLayout 
                 Padding="10">
-                
+
                 <Label 
                    Text="Codigo"
                    FontSize="Large"/>
-                
+
                 <Entry
                     Placeholder="Ingrese codigo(##-##)"/>
-                
+
                 <Label 
                     Text="Categoria"
                     FontSize="Large"/>
-                
+
                 <Picker
                     HorizontalOptions="FillAndExpand">
                     <Picker.Items>
@@ -33,6 +34,6 @@
 
             </StackLayout>
         </ScrollView>
-        
+
     </ContentPage.Content>
 </ContentPage>

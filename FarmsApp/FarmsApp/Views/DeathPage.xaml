@@ -19,7 +19,7 @@
                     </x:String>
                 </Picker.Items>
             </Picker>
-            -+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
