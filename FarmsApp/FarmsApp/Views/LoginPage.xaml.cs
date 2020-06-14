@@ -14,11 +14,11 @@ namespace FarmsApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
-        //public ICommand TapForgot => new Command<string>(async (url) => await Launcher.OpenAsync(url));
+        public ICommand TapForgot => new Command<string>(async (url) => await Launcher.OpenAsync(url));
         public LoginPage()
         {
             InitializeComponent();
-            //BindingContext = this;
+            BindingContext = this;
         }
     }
 }
