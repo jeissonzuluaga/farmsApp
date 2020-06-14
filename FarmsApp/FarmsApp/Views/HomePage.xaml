@@ -12,13 +12,10 @@
             BindingContext="{Binding Home}">
             <StackLayout>
                 <!-- Place new controls here -->
-                <StackLayout
-                        VerticalOptions="FillAndExpand">
+                
 
-                </StackLayout>
                 <Grid 
                     Padding="5"
-                    VerticalOptions="FillAndExpand"
                     Margin="10">
                    
                     <Grid.RowDefinitions>
@@ -33,36 +30,37 @@
 
                     <Button 
                         Text="Compras"
-                        FontSize="Large"
+                        FontSize="20"
                         Margin="8"
                         Grid.Column="0"    
-                        CornerRadius="5"
+                        CornerRadius="20"
                         BackgroundColor="OrangeRed"
                         BorderColor="AntiqueWhite"
-                        ContentLayout="top,10"
-                        Image="inventario"
+                        ContentLayout="top,-25"
+                        Image="compras"
                         VerticalOptions="FillAndExpand"
-                        HorizontalOptions="Fill"/>
+                        HorizontalOptions="Fill"
+                        />
 
                     <Button 
                         Text="Nacimientos"
-                        FontSize="Large"
+                        FontSize="20"
                         Margin="8"
                         Grid.Column="1"
-                        CornerRadius="5"
+                        CornerRadius="20"
                         BackgroundColor="Orange"
                         BorderColor="AntiqueWhite"
-                        ContentLayout="Top,10"
+                        ContentLayout="top,10"
                         Image="ternero"
                         VerticalOptions="FillAndExpand"
                         HorizontalOptions="Fill"/>
 
                     <Button 
                         Text="Ventas" 
-                        FontSize="Large"
+                        FontSize="20"
                         Margin="8"
                         Grid.Row="1"
-                        CornerRadius="5"
+                        CornerRadius="25"
                         BackgroundColor="DeepSkyBlue"
                         BorderColor="AntiqueWhite"
                         ContentLayout="Top,10"
@@ -72,25 +70,25 @@
 
                     <Button 
                         Text="Muertes" 
-                        FontSize="Large"
+                        FontSize="20"
                         Margin="8"
                         Grid.Row="1"
                         Grid.Column="1"
-                        CornerRadius="5"
+                        CornerRadius="20"
                         BackgroundColor="CadetBlue"
                         BorderColor="AntiqueWhite"
                         ContentLayout="Top,10"
-                        Image="ventas"
+                        Image="muertes"
                         VerticalOptions="FillAndExpand"
                         HorizontalOptions="Fill"/>
 
 
                     <Button 
                         Text="Perdidas" 
-                        FontSize="Large"
+                        FontSize="20"
                         Margin="8"
                         Grid.Row="2"
-                        CornerRadius="5"
+                        CornerRadius="20"
                         Opacity="50"
                         BackgroundColor="LightGreen"
                         BorderColor="AntiqueWhite"
@@ -101,18 +99,32 @@
 
                     <Button 
                         Text="Inventario"
-                        FontSize="Large"
+                        FontSize="20"
                         Margin="8"
                         Grid.Row="2"
                         Grid.Column="1"
-                        CornerRadius="5"
+                        CornerRadius="20"
                         BackgroundColor="Green"
                         BorderColor="AntiqueWhite"
                         ContentLayout="Top,10"
-                        Image="ventas"
+                        Image="inventario"
                         VerticalOptions="FillAndExpand"
                         HorizontalOptions="Fill"/>
+                    
+                    
                 </Grid>
+
+                <Button 
+                     Text="Ficha Tecnica"
+                     FontSize="20"
+                     Margin="22,0,22,22"
+                     Padding="10"
+                     CornerRadius="20"
+                     BackgroundColor="Green"
+                     BorderColor="AntiqueWhite"
+                     ContentLayout="Top,10"
+                     Image="fichatecnica"/>
+
 
             </StackLayout>
         </ScrollView>
