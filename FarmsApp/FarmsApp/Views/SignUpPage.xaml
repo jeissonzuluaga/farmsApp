@@ -16,7 +16,7 @@
                         FontSize="Large"
                         FontAttributes="Bold"
                         HorizontalOptions="Center"
-                        Text="Nombre"
+                        Text="Nombre de usuario"
                         TextColor="">
                 </Label>
 
@@ -24,7 +24,7 @@
                         HeightRequest="40"
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
-                        Placeholder="Ingrese su nombre completo"
+                        Placeholder="Ingrese nombre de usuario"
                         Text="{Binding Correo, Mode=TwoWay}"
                         TextColor="#4C4947"
                         WidthRequest="250">

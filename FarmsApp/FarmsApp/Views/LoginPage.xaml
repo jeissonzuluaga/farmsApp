@@ -27,24 +27,23 @@
                         FontSize="Large"
                         FontAttributes="Bold"
                         HorizontalOptions="Center"
-                        Text="Correo"
-                        TextColor="White">
+                        Text="Nombre usuario">
                     </Label>
 
                     <Entry
                         HeightRequest="40"
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
-                        Placeholder="Ingrese su usuario"
-                        Text="{Binding Correo, Mode=TwoWay}"
+                        Placeholder="Ingrese su nombre de usuario"
+                        Text="{Binding Usuario, Mode=TwoWay}"
                         TextColor="#4C4947"
-                        WidthRequest="250">
+                        WidthRequest="250"
+                        x:Name="">
                     </Entry>
 
                     <Label
                         FontSize="Large"
                         FontAttributes="Bold"
-                        TextColor="White"
                         HorizontalOptions="Center"
                         Text="Contraseña">
                     </Label>
