@@ -78,14 +78,14 @@
                     <!--Asignar un hipervínculo a un label-->
                     <Label
                         FontSize="Medium"
-                        HorizontalOptions="Center"
+                        HorizontalOptions="Center">
 
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="¿Olvidaste tu contraseña?">
                                     <Span.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding TapForgot}"
-                                          CommandParameter="https://docs.microsoft.com/xamarin/" />
+                                              CommandParameter="https://docs.microsoft.com/xamarin/" />
                                     </Span.GestureRecognizers>
                                 </Span>
                             </FormattedString>
