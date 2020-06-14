@@ -7,13 +7,12 @@ namespace FarmsApp.Infraestructure
     using System.Collections.Generic;
     using System.Text;
 
-    //Para ligar la pagina login con la MainViewModel
     class InstanceLocator
     {
         #region Propierties
         public MainViewModel Main{
-            get;
-            set;
+            get ;
+            set ;
         }
 
         #endregion

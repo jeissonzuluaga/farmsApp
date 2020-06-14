@@ -4,7 +4,9 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="FarmsApp.Views.HomePage">
+             x:Class="FarmsApp.Views.HomePage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="Home">
     <ContentPage.Content>
         <ScrollView
             BindingContext="{Binding Home}">

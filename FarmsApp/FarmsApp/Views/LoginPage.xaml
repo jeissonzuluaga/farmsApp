@@ -4,15 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             BindingContext="{Binding Main, Source={StaticResource Locator}}"
              x:Class="FarmsApp.Views.LoginPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
              Title="Login">
     <ContentPage.Content>
-
         <ScrollView>
             <StackLayout
-                BackgroundColor="#FFF">
-
+                BackgroundColor="#FFF"
+                BindingContext="{Binding Login}">
 
                 <Image
                     HorizontalOptions="Center"
@@ -37,6 +36,7 @@
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
                         Placeholder="Ingrese su usuario"
+                        Text="{Binding Usuario, Mode=TwoWay}"
                         TextColor="#4C4947"
                         WidthRequest="250">
                     </Entry>
@@ -55,6 +55,7 @@
                         HorizontalTextAlignment="Center"
                         IsPassword="True"
                         Placeholder="Ingrese su contraseña"
+                        Text="{Binding Password, Mode=TwoWay}"
                         TextColor="#4C4947"
                         WidthRequest="250">
                     </Entry>
@@ -63,29 +64,42 @@
                         Padding="15">
                         <Button
                         BackgroundColor="#EB6F2D"
+                        Command="{Binding EnterCommand}"
                         CornerRadius="23"
                         FontSize="Medium"
                         HeightRequest="46"
                         HorizontalOptions="Center"
+                        IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                         Text="Ingresar"
                         TextColor="White"
                         WidthRequest="220">
                         </Button>
 
-                       
+                        <Button
+                        BackgroundColor="#EB6F2D"
+                        Command="{Binding SignUpCommand}"
+                        CornerRadius="23"
+                        FontSize="Medium"
+                        HeightRequest="46"
+                        HorizontalOptions="Center"
+                        IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                        Text="Registrar"
+                        TextColor="White"
+                        WidthRequest="220">
+                        </Button>
                     </StackLayout>
 
                     <!--Asignar un hipervínculo a un label-->
                     <Label
                         FontSize="Medium"
-                        HorizontalOptions="Center">
-
+                        HorizontalOptions="Center"
+                        TextColor="#908985">
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="¿Olvidaste tu contraseña?">
                                     <Span.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding TapForgot}"
-                                              CommandParameter="https://docs.microsoft.com/xamarin/" />
+                                          CommandParameter="https://docs.microsoft.com/xamarin/" />
                                     </Span.GestureRecognizers>
                                 </Span>
                             </FormattedString>

@@ -5,8 +5,8 @@ namespace FarmsApp.ViewModels
     using System.Collections.Generic;
     using System.Text;
     using Views;
-    
-    public class HomeViewModel : BaseViewModel
+
+    public class SignUpViewModel : BaseViewModel
     {
     }
 }

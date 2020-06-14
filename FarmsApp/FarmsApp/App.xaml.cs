@@ -12,7 +12,8 @@ namespace FarmsApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LoginPage());
+            MainPage = new NavigationPage(new LoginPage())
+            { BarTextColor = Color.FromHex("#4C4947")};
         }
 
         protected override void OnStart()

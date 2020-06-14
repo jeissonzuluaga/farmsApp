@@ -5,13 +5,38 @@ namespace FarmsApp.ViewModels
     using System;
     using System.Collections.Generic;
     using System.Text;
-    class MainViewModel
+    public class MainViewModel
     {
         #region ViewModels
+        public LoginViewModel Login
+        {
+            get ;
+            set ;
+        }
 
+        public HomeViewModel Home
+        {
+            get;
+            set;
+        }
+
+        public SignUpViewModel SignUp
+        {
+            get;
+            set;
+        }
+        #endregion
+
+        #region Constructors
+        public MainViewModel()
+        {
+            instance = this;
+            this.Login = new LoginViewModel();
+        }
+        #endregion
+
+        #region Singleton
         private static MainViewModel instance;
-        internal HomeViewModel Home;
-
         public static MainViewModel GetInstance()
         {
             if (instance == null)
@@ -20,10 +45,7 @@ namespace FarmsApp.ViewModels
             }
             return instance;
         }
-
-        #endregion
-
-        
+        #endregion        
     }
 
 }
