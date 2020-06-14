@@ -94,10 +94,10 @@ namespace FarmsApp.ViewModels
         {
             get
             {
-                return new RelayCommand(SignUpL);
+                return new RelayCommand(SignUp);
             }
         }
-        private async void SignUpL()
+        private async void SignUp()
         {
             await Application.Current.MainPage.DisplayAlert(
                 "Notificación",

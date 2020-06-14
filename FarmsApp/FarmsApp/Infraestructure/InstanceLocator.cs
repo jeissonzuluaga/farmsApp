@@ -17,7 +17,6 @@ namespace FarmsApp.Infraestructure
 
         #endregion
 
-
         #region Constructor
         public InstanceLocator()
         {
