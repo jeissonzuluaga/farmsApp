@@ -13,17 +13,17 @@ namespace FarmsApp.ViewModels
     public class LoginViewModel : BaseViewModel
     {
         #region Attributes
-        private string usuario;
+        private string correo;
         private string password;
         private bool isEnabled;
         #endregion
 
 
         #region Properties
-        public string Usuario
+        public string Correo
         {
-            get { return this.usuario; }
-            set { SetValue(ref this.usuario, value); }
+            get { return this.correo; }
+            set { SetValue(ref this.correo, value); }
         }
         public string Password
         {
@@ -42,7 +42,7 @@ namespace FarmsApp.ViewModels
         public LoginViewModel()
         {
             //Aquí se le pueden dar valores iniciales a controles como un switch, un Entry o un Button
-            this.Usuario = string.Empty;
+            this.Correo = string.Empty;
             this.Password = string.Empty;
             this.IsEnabled = true;
         }
@@ -59,11 +59,11 @@ namespace FarmsApp.ViewModels
         }
         private async void Enter()
         {
-            if (string.IsNullOrEmpty(this.Usuario))
+            if (string.IsNullOrEmpty(this.Correo))
             {
                 await Application.Current.MainPage.DisplayAlert(
                     "Error",
-                    "Usuario no aceptado.",
+                    "Correo no aceptado.",
                     "Aceptar");
                 return;
             }
@@ -82,7 +82,7 @@ namespace FarmsApp.ViewModels
                 "Ingreso Exitoso.",
                 "Bienvenido(a)");
 
-            this.Usuario = string.Empty;
+            this.Correo = string.Empty;
             this.Password = string.Empty;
 
             MainViewModel.GetInstance().Home = new HomeViewModel();

@@ -30,6 +30,7 @@
 
                     <Button 
                         Text="Compras"
+                        Command="{Binding BuyCommand}"
                         FontSize="20"
                         Margin="8"
                         Grid.Column="0"    
@@ -44,6 +45,7 @@
 
                     <Button 
                         Text="Nacimientos"
+                        Command="{Binding BornCommand}"
                         FontSize="20"
                         Margin="8"
                         Grid.Column="1"
@@ -57,6 +59,7 @@
 
                     <Button 
                         Text="Ventas" 
+                        Command="{Binding SalesCommand}"
                         FontSize="20"
                         Margin="8"
                         Grid.Row="1"
@@ -70,6 +73,7 @@
 
                     <Button 
                         Text="Muertes" 
+                        Command="{Binding DeathCommand}"
                         FontSize="20"
                         Margin="8"
                         Grid.Row="1"
@@ -84,7 +88,8 @@
 
 
                     <Button 
-                        Text="Perdidas" 
+                        Text="Perdidas"
+                        Command="{Binding LossesCommand}"
                         FontSize="20"
                         Margin="8"
                         Grid.Row="2"
@@ -93,12 +98,13 @@
                         BackgroundColor="LightGreen"
                         BorderColor="AntiqueWhite"
                         ContentLayout="Top,10"
-                        Image="ventas"
+                        Image="Perdidas"
                         VerticalOptions="FillAndExpand"
                         HorizontalOptions="Fill"/>
 
                     <Button 
                         Text="Inventario"
+                        Command="{Binding InventoryCommand}"
                         FontSize="20"
                         Margin="8"
                         Grid.Row="2"
@@ -116,6 +122,7 @@
 
                 <Button 
                      Text="Ficha Tecnica"
+                    Command="{Binding DataSheetCommand}"
                      FontSize="20"
                      Margin="22,0,22,22"
                      Padding="10"

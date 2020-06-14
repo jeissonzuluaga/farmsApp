@@ -6,7 +6,6 @@ namespace FarmsApp.Views
 	using System.Linq;
 	using System.Text;
 	using System.Threading.Tasks;
-
 	using Xamarin.Forms;
 	using Xamarin.Forms.Xaml;
 
@@ -17,5 +16,10 @@ namespace FarmsApp.Views
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void DatePicker_DateSelected(object sender, DateChangedEventArgs e)
+        {
+
+        }
+    }
 }

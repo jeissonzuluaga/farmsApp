@@ -4,17 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="FarmsApp.Views.SalesPage"
-             Title="Ventas">
+             x:Class="FarmsApp.Views.LossesPage"
+             Title="Perdidas(Ganado)">
     <ContentPage.Content>
         <StackLayout
-           BindingContext="{Binding Sales}">
-            <StackLayout>
-                <Label Text="Welcome to Xamarin.Forms SAles!"
-                    VerticalOptions="CenterAndExpand" 
-                    HorizontalOptions="CenterAndExpand" />
-            </StackLayout>
+            BindingContext="Losses">
+            <Label Text="Welcome to Xamarin.Forms LossesSS!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
-       
     </ContentPage.Content>
 </ContentPage>

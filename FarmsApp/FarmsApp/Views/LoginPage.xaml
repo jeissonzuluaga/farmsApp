@@ -27,7 +27,7 @@
                         FontSize="Large"
                         FontAttributes="Bold"
                         HorizontalOptions="Center"
-                        Text="Usuario"
+                        Text="Correo"
                         TextColor="White">
                     </Label>
 
@@ -36,7 +36,7 @@
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
                         Placeholder="Ingrese su usuario"
-                        Text="{Binding Usuario, Mode=TwoWay}"
+                        Text="{Binding Correo, Mode=TwoWay}"
                         TextColor="#4C4947"
                         WidthRequest="250">
                     </Entry>

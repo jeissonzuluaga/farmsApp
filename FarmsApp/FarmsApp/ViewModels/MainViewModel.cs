@@ -25,6 +25,45 @@ namespace FarmsApp.ViewModels
             get;
             set;
         }
+        internal  BornViewModel Born 
+        {
+            get;
+            
+            set; 
+        }
+        internal InventoryViewModel Inventory 
+        {
+            get;
+            set;        
+        }
+
+        internal PurchasesViewModel Purchases
+        {
+            get;
+            set;
+
+        }
+        internal SalesViewModel Sales
+        {   
+            get;
+            set;
+        }
+
+        internal DeathViewModel Death
+        {
+            get;
+            set;
+        }
+        internal LossesViewModel Losses 
+        {
+            get;
+            set;
+        }
+        internal DataSheetViewModel DataSheet
+        {
+            get;
+            set;
+        }
         #endregion
 
         #region Constructors

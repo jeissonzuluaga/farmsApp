@@ -7,32 +7,52 @@
         <ScrollView
             BindingContext="{Binding Born}">
             <StackLayout 
-                Padding="10">
+                Padding="10"
+                HorizontalOptions="Center">
+                <StackLayout>
+                    <Image/>
+                </StackLayout>
 
                 <Label 
-                   Text="Codigo"
-                   FontSize="Large"/>
+                    Text="Codigo"
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    FontAttributes="Bold"/>
 
                 <Entry
-                    Placeholder="Ingrese codigo(##-##)"/>
+                    Placeholder="Ingrese codigo"
+                    WidthRequest="280"
+                    HorizontalTextAlignment="Center"/>
 
                 <Label 
                     Text="Categoria"
-                    FontSize="Large"/>
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    Padding="0,20,0,0"
+                    FontAttributes="Bold"/>
 
                 <Picker
                     HorizontalOptions="FillAndExpand">
                     <Picker.Items>
                         <x:String>
-                            Hola que hace
+                            Categoria 1
                         </x:String>
                         <x:String>
-                            Hola que hace 2
+                            Categoria 2
                         </x:String>
                     </Picker.Items>
                 </Picker>
+                <StackLayout Orientation="Horizontal">
+                    <DatePicker 
+                        HorizontalOptions="FillAndExpand"
+                        />
 
-            </StackLayout>
+                    <Button
+                        HorizontalOptions="FillAndExpand"
+                        Text="Guardar"/>
+
+                </StackLayout>
+                </StackLayout>
         </ScrollView>
 
     </ContentPage.Content>

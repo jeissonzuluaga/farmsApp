@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1028397124430",
+    "firebase_url": "https://farmsapp-241a4.firebaseio.com",
+    "project_id": "farmsapp-241a4",
+    "storage_bucket": "farmsapp-241a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028397124430:android:3b25cfd96bbc2374eaac1f",
+        "android_client_info": {
+          "package_name": "com.Jwcompany.farmsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028397124430-52nan7bpm3sqhir1cieo2gobhuupkf6g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChTHUwAd0QbO-LOaYnDtoYHWC1_gVVqqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028397124430-52nan7bpm3sqhir1cieo2gobhuupkf6g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

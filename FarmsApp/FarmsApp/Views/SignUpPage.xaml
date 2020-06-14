@@ -9,9 +9,84 @@
              Title="Registro de Usuarios">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout 
+                    Padding="10"
+                    VerticalOptions="EndAndExpand">
+                <Label
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        Text="Nombre"
+                        TextColor="">
+                </Label>
+
+                <Entry
+                        HeightRequest="40"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        Placeholder="Ingrese su nombre completo"
+                        Text="{Binding Correo, Mode=TwoWay}"
+                        TextColor="#4C4947"
+                        WidthRequest="250">
+                </Entry>
+
+                <Label
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        Text="Correo">
+                </Label>
+
+                <Entry
+                        HeightRequest="40"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        Keyboard="Email"
+                        Placeholder="JwCompany@.....com"
+                        Text="{Binding Password, Mode=TwoWay}"
+                        TextColor="#4C4947"
+                        WidthRequest="250">
+                </Entry>
+
+                <Label
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        
+                        HorizontalOptions="Center"
+                        Text="Contraseña">
+                </Label>
+
+                <Entry
+                        HeightRequest="40"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        IsPassword="True"
+                        Placeholder="Ingrese su contraseña"
+                        Text="{Binding Password, Mode=TwoWay}"
+                        TextColor="#4C4947"
+                        WidthRequest="250">
+                </Entry>
+
+                <StackLayout
+                        Padding="15">
+                    
+
+                    <Button
+                        BackgroundColor="#EB6F2D"
+                        Command="{Binding SignUpCommand}"
+                        CornerRadius="23"
+                        FontSize="Medium"
+                        HeightRequest="46"
+                        HorizontalOptions="Fill"
+                        IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                        Text="Registrar"
+                        TextColor="White">
+                    </Button>
+                </StackLayout>
+
+                <!--Asignar un hipervínculo a un label-->
+                
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

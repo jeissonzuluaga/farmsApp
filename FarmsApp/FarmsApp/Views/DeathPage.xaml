@@ -7,9 +7,13 @@
              x:Class="FarmsApp.Views.DeathPage"
              Title="Muertes">
     <ContentPage.Content>
-        <StackLayout Padding="25">
-            <Label Text="Selecciona el animal que murio:"/>
-            <Picker HorizontalOptions="FillAndExpand">
+        <StackLayout 
+            Padding="25"
+            BindingContext="{Binding Death}">
+            <Label 
+                Text="Selecciona el animal que murio:"/>
+            <Picker 
+                HorizontalOptions="FillAndExpand">
                 <Picker.Items>
                     <x:String>
                         A listar vacas
