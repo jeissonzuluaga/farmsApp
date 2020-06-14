@@ -111,9 +111,6 @@
     <AndroidResource Include="Resources\drawable\inventario.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\logo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\ternero.png" />
   </ItemGroup>
   <ItemGroup>
