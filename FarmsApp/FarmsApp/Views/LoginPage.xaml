@@ -80,7 +80,6 @@
 
                         <Button
                             BackgroundColor="#EB6F2D"
-                            Command="{Binding SignUpCommand}"
                             CornerRadius="23"
                             FontSize="Medium"
                             HeightRequest="46"
