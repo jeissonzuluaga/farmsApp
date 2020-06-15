@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace FarmsApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LossesPage : ContentPage
+    public partial class LostPage : ContentPage
     {
-        public LossesPage()
+        public LostPage()
         {
             InitializeComponent();
         }

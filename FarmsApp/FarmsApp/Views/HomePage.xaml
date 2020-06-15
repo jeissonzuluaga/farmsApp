@@ -89,7 +89,7 @@
 
                     <Button 
                         Text="Perdidas"
-                        Command="{Binding LossesCommand}"
+                        Command="{Binding LostCommand}"
                         FontSize="20"
                         Margin="8"
                         Grid.Row="2"

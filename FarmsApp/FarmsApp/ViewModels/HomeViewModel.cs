@@ -118,18 +118,18 @@ namespace FarmsApp.ViewModels
             await Application.Current.MainPage.Navigation.PushAsync(new DeathPage());
         }
 
-        public ICommand LossesCommand
+        public ICommand LostCommand
         {
             get
             {
-                return new RelayCommand(Losses);
+                return new RelayCommand(Lost);
             }
         }
 
-        private async void Losses()
+        private async void Lost()
         {
-            MainViewModel.GetInstance().Losses = new LossesViewModel();
-            await Application.Current.MainPage.Navigation.PushAsync(new LossesPage());
+            MainViewModel.GetInstance().Losses = new LostViewModel();
+            await Application.Current.MainPage.Navigation.PushAsync(new LostPage());
         }
 
         public ICommand DataSheetCommand

@@ -54,7 +54,7 @@ namespace FarmsApp.ViewModels
             get;
             set;
         }
-        internal LossesViewModel Losses 
+        internal LostViewModel Losses 
         {
             get;
             set;

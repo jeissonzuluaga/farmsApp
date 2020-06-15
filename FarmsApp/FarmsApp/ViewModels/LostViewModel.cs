@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FarmsApp.ViewModels
 {
-    class LossesViewModel
+    class LostViewModel
     {
     }
 }
