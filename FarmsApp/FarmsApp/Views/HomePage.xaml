@@ -53,7 +53,7 @@
                         BackgroundColor="Orange"
                         BorderColor="AntiqueWhite"
                         ContentLayout="top,10"
-                        Image="ternero"
+                        Image="Nacimientos"
                         VerticalOptions="FillAndExpand"
                         HorizontalOptions="Fill"/>
 
@@ -122,12 +122,12 @@
 
                 <Button 
                      Text="Ficha Tecnica"
-                    Command="{Binding DataSheetCommand}"
+                     Command="{Binding DataSheetCommand}"
                      FontSize="20"
                      Margin="22,0,22,22"
                      Padding="10"
                      CornerRadius="20"
-                     BackgroundColor="Green"
+                     BackgroundColor="#F9F08E"
                      BorderColor="AntiqueWhite"
                      ContentLayout="Top,10"
                      Image="fichatecnica"/>
