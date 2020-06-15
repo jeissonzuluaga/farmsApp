@@ -9,10 +9,44 @@ namespace FarmsApp.ViewModels
     using System.Text;
     using System.Windows.Input;
     using System.ComponentModel;
-
+    using Services;
 
     public class HomeViewModel : BaseViewModel
     {
+        #region Services
+        private ApiService apiService;
+        #endregion
+
+        #region Constructors
+        public HomeViewModel()
+        {
+            // De esta forma se instancia el servicio en el constructor
+            this.apiService = new ApiService();
+            this.LoadHome();
+        }
+
+        #endregion
+
+        #region Methods
+        private async void LoadHome()
+        {
+            var connection = await this.apiService.CheckConnection();
+
+            if (!connection.IsSuccess)
+            {
+                await Application.Current.MainPage.DisplayAlert(
+                    "Error",
+                    connection.Message,
+                    "Accept");
+
+                // Esta línea permite devolver al usuario a la página anterior (similar a un Esc pero por código)
+                await Application.Current.MainPage.Navigation.PopAsync();
+                return;
+            }
+        }
+
+        #endregion
+
         #region Commands
         public ICommand BornCommand 
         {
@@ -27,8 +61,7 @@ namespace FarmsApp.ViewModels
             MainViewModel.GetInstance().Born = new BornViewModel();
             await Application.Current.MainPage.Navigation.PushAsync(new BornPage());
         }
-        #endregion
-        #region CommandInventory
+
         public ICommand InventoryCommand
         {
             get
@@ -42,8 +75,7 @@ namespace FarmsApp.ViewModels
             MainViewModel.GetInstance().Inventory = new InventoryViewModel();
             await Application.Current.MainPage.Navigation.PushAsync(new InventoryPage());
         }
-        #endregion
-        #region CommandPurchases
+
         public ICommand PurchasesCommand
         {
             get
@@ -57,8 +89,7 @@ namespace FarmsApp.ViewModels
             MainViewModel.GetInstance().Purchases = new PurchasesViewModel();
             await Application.Current.MainPage.Navigation.PushAsync(new PurchasesPage());
         }
-        #endregion
-        #region CommandSales
+
         public ICommand SalesCommand
         {
             get
@@ -72,8 +103,7 @@ namespace FarmsApp.ViewModels
             MainViewModel.GetInstance().Sales = new SalesViewModel();
             await Application.Current.MainPage.Navigation.PushAsync(new SalesPage());
         }
-        #endregion#region CommandSales
-        #region CommandDeath
+
         public ICommand DeathCommand
         {
             get
@@ -87,8 +117,7 @@ namespace FarmsApp.ViewModels
             MainViewModel.GetInstance().Death = new DeathViewModel();
             await Application.Current.MainPage.Navigation.PushAsync(new DeathPage());
         }
-        #endregion
-        #region CommandLosses
+
         public ICommand LossesCommand
         {
             get
@@ -102,8 +131,7 @@ namespace FarmsApp.ViewModels
             MainViewModel.GetInstance().Losses = new LossesViewModel();
             await Application.Current.MainPage.Navigation.PushAsync(new LossesPage());
         }
-        #endregion
-        #region CommandDataSheet
+
         public ICommand DataSheetCommand
         {
             get
