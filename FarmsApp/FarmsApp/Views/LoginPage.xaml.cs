@@ -1,6 +1,7 @@
 ﻿
 namespace FarmsApp.Views
 {
+    using FarmsApp.Infraestructure;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -19,6 +20,26 @@ namespace FarmsApp.Views
         {
             InitializeComponent();
             //BindingContext = this;
+            
+        }
+
+        private async void Login_Clicked(object sender, EventArgs e)
+        {
+            string Correo = CorreoInput.Text;
+            string Contraseña = PassInput.Text;
+
+            var fbLogin = DependencyService.Get<FirebaseAuthConn>();
+            string token = await fbLogin.DoLoginWithUP(Correo, Contraseña);
+            await DisplayAlert("LOGIN", "Has ingresado", "Bienvenido(a)");
+        }
+        private async void Register_Clicked(object sender, EventArgs e)
+        {
+            string Correo = CorreoInput.Text;
+            string Contraseña = PassInput.Text;
+
+            var fbLogin = DependencyService.Get<FirebaseAuthConn>();
+            string token = await fbLogin.DoRegisterWithUP(Correo, Contraseña);
+            await DisplayAlert("Registro", "Exitoso", "OK");
         }
     }
 }
