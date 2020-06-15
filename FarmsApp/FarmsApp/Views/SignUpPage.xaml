@@ -16,8 +16,7 @@
                         FontSize="Large"
                         FontAttributes="Bold"
                         HorizontalOptions="Center"
-                        Text="Nombre de usuario"
-                        TextColor="">
+                        Text="Nombre de usuario">
                 </Label>
 
                 <Entry

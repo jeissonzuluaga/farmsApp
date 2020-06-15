@@ -27,18 +27,19 @@
                         FontSize="Large"
                         FontAttributes="Bold"
                         HorizontalOptions="Center"
-                        Text="Nombre usuario">
+                        Text="Correo">
                     </Label>
 
                     <Entry
                         HeightRequest="40"
+                        Keyboard="Email"
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
-                        Placeholder="Ingrese su nombre de usuario"
+                        Placeholder="JwCompany@.....comº"
                         Text="{Binding Usuario, Mode=TwoWay}"
                         TextColor="#4C4947"
                         WidthRequest="250"
-                        x:Name="">
+                        x:Name="CorreoInput">
                     </Entry>
 
                     <Label
@@ -56,35 +57,40 @@
                         Placeholder="Ingrese su contraseña"
                         Text="{Binding Password, Mode=TwoWay}"
                         TextColor="#4C4947"
-                        WidthRequest="250">
+                        WidthRequest="250"
+                        x:Name="PassInput">
                     </Entry>
 
                     <StackLayout
                         Padding="15">
                         <Button
-                        BackgroundColor="#EB6F2D"
-                        Command="{Binding EnterCommand}"
-                        CornerRadius="23"
-                        FontSize="Medium"
-                        HeightRequest="46"
-                        HorizontalOptions="Center"
-                        IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
-                        Text="Ingresar"
-                        TextColor="White"
-                        WidthRequest="220">
+                            BackgroundColor="#EB6F2D"
+                            Command="{Binding EnterCommand}"
+                            CornerRadius="23"
+                            FontSize="Medium"
+                            HeightRequest="46"
+                            HorizontalOptions="Center"
+                            IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                            Text="Ingresar"
+                            TextColor="White"
+                            WidthRequest="220"
+                            x:Name="BtnLogin"
+                            Clicked="Login_Clicked">
                         </Button>
 
                         <Button
-                        BackgroundColor="#EB6F2D"
-                        Command="{Binding SignUpCommand}"
-                        CornerRadius="23"
-                        FontSize="Medium"
-                        HeightRequest="46"
-                        HorizontalOptions="Center"
-                        IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
-                        Text="Registrar"
-                        TextColor="White"
-                        WidthRequest="220">
+                            BackgroundColor="#EB6F2D"
+                            Command="{Binding SignUpCommand}"
+                            CornerRadius="23"
+                            FontSize="Medium"
+                            HeightRequest="46"
+                            HorizontalOptions="Center"
+                            IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
+                            Text="Registrar"
+                            TextColor="White"
+                            WidthRequest="220"
+                            x:Name="BtnRegister"
+                            Clicked="Register_Clicked">
                         </Button>
                     </StackLayout>
 
