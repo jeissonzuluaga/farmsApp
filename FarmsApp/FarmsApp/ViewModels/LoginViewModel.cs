@@ -50,45 +50,7 @@ namespace FarmsApp.ViewModels
 
 
         #region Commands
-        public ICommand EnterCommand
-        {
-            get
-            {
-                return new RelayCommand(Enter);
-            }
-        }
-        private async void Enter()
-        {
-            if (string.IsNullOrEmpty(this.Correo))
-            {
-                await Application.Current.MainPage.DisplayAlert(
-                    "Error",
-                    "Correo no aceptado.",
-                    "Aceptar");
-                return;
-            }
-
-            if (string.IsNullOrEmpty(this.Password))
-            {
-                await Application.Current.MainPage.DisplayAlert(
-                    "Error",
-                    "Contraseña no aceptada.",
-                    "Aceptar");
-                return;
-            }
-
-            await Application.Current.MainPage.DisplayAlert(
-                "Notificación",
-                "Ingreso Exitoso.",
-                "Bienvenido(a)");
-
-            this.Correo = string.Empty;
-            this.Password = string.Empty;
-
-            MainViewModel.GetInstance().Home = new HomeViewModel();
-            await Application.Current.MainPage.Navigation.PushAsync(new HomePage());
-
-        }
+        
 
         public ICommand SignUpCommand
         {
