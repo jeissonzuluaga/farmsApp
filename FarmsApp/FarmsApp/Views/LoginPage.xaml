@@ -35,7 +35,7 @@
                         Keyboard="Email"
                         HorizontalOptions="Center"
                         HorizontalTextAlignment="Center"
-                        Placeholder="JwCompany@.....comº"
+                        Placeholder="ingrese su correo"
                         Text="{Binding Usuario, Mode=TwoWay}"
                         TextColor="#4C4947"
                         WidthRequest="250"
