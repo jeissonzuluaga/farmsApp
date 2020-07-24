@@ -7,10 +7,82 @@
              x:Class="FarmsApp.Views.PurchasesPage">
     <ContentPage.Content>
         <StackLayout
-            BindingContext="{Binding Purchases}">
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            BindingContext="{Binding Purchases}"
+            HorizontalOptions="Center"
+            >
+            <StackLayout Padding="25">
+                <Image Source="compras"/>
+            </StackLayout>
+            <Label Text="Fecha"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"></Label>
+            <DatePicker HorizontalOptions="FillAndExpand"
+                        WidthRequest="280"></DatePicker>
+
+            <Label Text="Cantidad"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"></Label>
+            <Entry Placeholder="# de vacas"
+                   Keyboard="Numeric"
+                   HorizontalTextAlignment="Center"
+                   WidthRequest="280"></Entry>
+            <Label Text="Categoria"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"></Label>
+            <Picker
+                    HorizontalOptions="FillAndExpand">
+                <Picker.Items>
+                    <x:String>
+                        Ternero lactante
+                    </x:String>
+                    <x:String>
+                        Hembras 8 - 12 meses
+                    </x:String>
+                    <x:String>
+                        Hembras 13 - 24 meses
+                    </x:String>
+                    <x:String>
+                        Hembras >24 meses
+
+                    </x:String>
+                    <x:String>
+                        Machos 8 - 12 meses
+                    </x:String>
+                    <x:String>
+                        Machos 13 - 24 meses
+                    </x:String>
+                    <x:String>
+                        Machos >24 meses
+
+                    </x:String>
+                </Picker.Items>
+            </Picker>
+            <Label Text="Peso vivo"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"></Label>
+            <Entry Placeholder="Kg"
+                   Keyboard="Numeric"
+                   HorizontalTextAlignment="Center"></Entry>
+            <Label Text="Origen"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"></Label>
+            <Entry Placeholder="Nombre Completo"
+                   Keyboard="Text"
+                   HorizontalTextAlignment="Center"></Entry>
+            <Button HorizontalOptions="FillAndExpand"
+                    Text="Guardar"
+                    x:Name="btnGuardar"/>
+            <Button HorizontalOptions="FillAndExpand"
+                    Text="Inventario"
+                    x:Name="btnFactura"/>
+
         </StackLayout>
+
+        
     </ContentPage.Content>
 </ContentPage>

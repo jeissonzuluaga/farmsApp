@@ -9,21 +9,93 @@
     <ContentPage.Content>
         <StackLayout 
             Padding="25"
-            BindingContext="{Binding Death}">
+            BindingContext="{Binding Death}"
+            HorizontalOptions="Center">
+            <StackLayout Padding="20">
+                <Image Source="muertes"
+                   Aspect="AspectFit"></Image>
+            </StackLayout>
             <Label 
-                Text="Selecciona el animal que murio:"/>
+                Text="Selecciona el animal que murio:"
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                FontSize="Large"/>
             <Picker 
                 HorizontalOptions="FillAndExpand">
                 <Picker.Items>
                     <x:String>
-                        A listar vacas
+                        Ternero lactante
                     </x:String>
                     <x:String>
-                        A listar vacas
+                        Hembras 8 - 12 meses
+                    </x:String>
+                    <x:String>
+                        Hembras 13 - 24 meses
+                    </x:String>
+                    <x:String>
+                        Hembras >24 meses
+
+                    </x:String>
+                    <x:String>
+                        Machos 8 - 12 meses
+                    </x:String>
+                    <x:String>
+                        Machos 13 - 24 meses
+                    </x:String>
+                    <x:String>
+                        Machos >24 meses
+
                     </x:String>
                 </Picker.Items>
             </Picker>
 
+            <StackLayout 
+                Padding="10"
+                HorizontalOptions="Center">
+                <StackLayout>
+                    <Image/>
+                </StackLayout>
+
+                <Label 
+                    Text="Codigo"
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    FontAttributes="Bold"/>
+
+                <Entry
+                    Placeholder="Ingrese codigo"
+                    WidthRequest="280"
+                    HorizontalTextAlignment="Center"/>
+
+                <Label 
+                    Text="Categoria"
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    Padding="0,20,0,0"
+                    FontAttributes="Bold"/>
+
+                <Picker
+                    HorizontalOptions="FillAndExpand">
+                    <Picker.Items>
+                        <x:String>
+                            Categoria 1
+                        </x:String>
+                        <x:String>
+                            Categoria 2
+                        </x:String>
+                    </Picker.Items>
+                </Picker>
+                <StackLayout Orientation="Horizontal">
+                    <DatePicker 
+                        HorizontalOptions="FillAndExpand"
+                        />
+
+                    <Button
+                        HorizontalOptions="FillAndExpand"
+                        Text="Guardar"/>
+
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

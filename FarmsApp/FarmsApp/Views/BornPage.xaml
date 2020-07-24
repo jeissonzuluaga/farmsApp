@@ -9,8 +9,8 @@
             <StackLayout 
                 Padding="10"
                 HorizontalOptions="Center">
-                <StackLayout>
-                    <Image/>
+                <StackLayout Padding="25">
+                    <Image Source="nacimientos"/>
                 </StackLayout>
 
                 <Label 
@@ -35,10 +35,27 @@
                     HorizontalOptions="FillAndExpand">
                     <Picker.Items>
                         <x:String>
-                            Categoria 1
+                            Ternero lactante
                         </x:String>
                         <x:String>
-                            Categoria 2
+                            Hembras 8 - 12 meses
+                        </x:String>
+                        <x:String>
+                            Hembras 13 - 24 meses
+                        </x:String>
+                        <x:String>
+                            Hembras >24 meses
+
+                        </x:String>
+                        <x:String>
+                            Machos 8 - 12 meses
+                        </x:String>
+                        <x:String>
+                            Machos 13 - 24 meses
+                        </x:String>
+                        <x:String>
+                            Machos >24 meses
+
                         </x:String>
                     </Picker.Items>
                 </Picker>
